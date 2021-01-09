@@ -3,6 +3,7 @@
 //  vfspp
 //
 //  Created by Yevgeniy Logachev on 6/23/16.
+//  Modified by Giuseppe Mastrangelo on 09 Jan 2021.
 //
 //
 
@@ -66,7 +67,7 @@ void CNativeFile::Open(int mode)
     m_Mode = mode;
     m_IsReadOnly = true;
     
-    std::ios_base::openmode open_mode = (std::ios_base::openmode)0x00;
+    auto open_mode = (std::ios_base::openmode)0x00;
     if (mode & IFile::In)
     {
         open_mode |= std::fstream::in;
@@ -84,6 +85,10 @@ void CNativeFile::Open(int mode)
     if (mode & IFile::Truncate)
     {
         open_mode |= std::fstream::trunc;
+    }
+    if (mode & IFile::Binary)
+    {
+        open_mode |= std::fstream::binary;
     }
     
     m_Stream.open(FileInfo().AbsolutePath().c_str(), open_mode);
