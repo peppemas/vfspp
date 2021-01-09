@@ -3,6 +3,7 @@
 //  vfspp
 //
 //  Created by Yevgeniy Logachev on 6/22/16.
+//  Modified by Giuseppe Mastrangelo on 09 Jan 2021.
 //
 //
 
@@ -36,7 +37,10 @@ public:
         Out = 0x02,
         ReadWrite = In | Out,
         Append = 0x04,
-        Truncate = 0x08
+        Truncate = 0x08,
+        Binary = 0x10,
+        InBinary = In | Binary,
+        OutBinary = Out | Binary
     };
     
 public:
