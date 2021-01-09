@@ -3,14 +3,15 @@
 //  vfspp
 //
 //  Created by Yevgeniy Logachev on 6/23/16.
+//  Modified by Giuseppe Mastrangelo on 09 Jan 2021.
 //
 //
 
-#include "CZipFileSystem.h"
 #include <dirent.h>
 #include <fstream>
 #include "CZipFile.h"
 #include "CStringUtilsVFS.h"
+#include "CZipFileSystem.h"
 
 using namespace vfspp;
 

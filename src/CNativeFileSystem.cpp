@@ -3,15 +3,15 @@
 //  vfspp
 //
 //  Created by Yevgeniy Logachev on 6/23/16.
+//  Modified by Giuseppe Mastrangelo on 09 Jan 2021.
 //
 //
 
-#include "CNativeFileSystem.h"
 #include <dirent.h>
 #include <fstream>
 #include "CNativeFile.h"
 #include "CStringUtilsVFS.h"
-#include <sys/stat.h>
+#include "CNativeFileSystem.h"
 
 using namespace vfspp;
 
