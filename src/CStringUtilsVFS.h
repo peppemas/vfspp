@@ -9,7 +9,7 @@
 #ifndef CSTRINGUTILS_H
 #define CSTRINGUTILS_H
 
-#include "Global.h"
+#include "VFS.h"
 
 namespace vfspp
 {
