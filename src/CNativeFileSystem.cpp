@@ -9,6 +9,7 @@
 
 #include <dirent.h>
 #include <fstream>
+#include <sys/stat.h>
 #include "CNativeFile.h"
 #include "CStringUtilsVFS.h"
 #include "CNativeFileSystem.h"
